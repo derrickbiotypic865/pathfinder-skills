@@ -1,10 +1,18 @@
-# Pathfinder Skills
+# Pathfinder
 
-A collection of Claude Code skills that turn non-technical people into builders — creating their own automations, apps, and agents.
+Skills, teaching materials, and resources that turn non-technical people into AI-native builders.
 
 > *"We are not caretakers of the past. We are obsessive learners, compulsive experimenters, and builders of what's next."*
 
-Built for people who believe the AI-native future will be shaped not only by developers, but by business people who learn to build. These skills take someone from "I've never opened a terminal" to "I just built an agent that reimagined our workflow."
+This is for people who believe the AI-native future will be built not only by developers, but by business people who learn to build. We focus on obsessive learners and eager experimenters — people who embrace the discomfort of exploring unknown unknowns and who will forge the path for others.
+
+We promise to help them gain the superpower of **building** — the ability to create their own automations, apps, and agents, and to use that power where it delivers the greatest possible impact.
+
+**What's inside:**
+- **18 Claude Code skills** — from understanding your first command to building your own agents
+- **Teaching materials** — workshop plans, train-the-trainer kits, teaching guides
+- **Real-world patterns** — battle-tested code patterns from production Apps Script projects
+- **The journey** — a structured path from "I've never opened a terminal" to "I just built an agent that reimagined our workflow"
 
 ## Getting Started — Just 5 Commands
 
