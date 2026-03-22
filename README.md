@@ -1,112 +1,137 @@
-# Tech Translator
+# AI-Native Builder Skills
 
-A Claude Code skill that translates technical concepts, commands, errors, and code into plain, friendly language for non-technical users.
+A collection of Claude Code skills designed to help non-technical people become builders — creating their own automations, apps, and agents.
 
-Perfect for onboarding teammates who are new to development tools, helping non-engineers use Claude Code, or making any technical workflow more approachable.
+> *"We are not caretakers of the past. We are obsessive learners, compulsive experimenters, and builders of what's next."*
 
-## Features
+Built for people who believe the AI-native future will be shaped not only by developers, but by business people who learn to build. These skills take someone from "I've never opened a terminal" to "I just built an agent that reimagined our workflow."
 
-| Feature | Description |
-|:--------|:------------|
-| **One-liner analogies** | Every command and concept gets a real-world comparison |
-| **Step-by-step breakdowns** | Multi-part commands are explained piece by piece |
-| **Safety labels** | `[SAFE]` / `[REVERSIBLE]` / `[CAUTION]` on every action |
-| **Difficulty ratings** | `[Beginner]` / `[Intermediate]` / `[Advanced]` tags |
-| **Code comments** | All generated code includes plain-English comments |
-| **Implementation walkthroughs** | Full setup instructions with exact clicks and menu paths |
-| **Personal glossary** | Tracks terms you've learned and adapts over time |
-| **Progress tracking** | Reduces explanation depth as you master topics |
-| **"Why did you do that?"** | Explains reasoning behind any action |
-| **"Show me a simpler version"** | Rewrites code/commands for maximum clarity |
-| **"Quiz me"** | Tests your knowledge with friendly multiple-choice questions |
-| **"Explain like I'm 5"** | Zero-jargon mode using only everyday analogies |
-| **Platform-aware** | Adapts instructions to Windows, Mac, or Linux |
-| **Cheat sheet generator** | One-page reference of everything covered |
-| **"What should I try next?"** | Suggests follow-up learning after each task |
+## The Skills (13)
+
+### The On-Ramp
+| Skill | What it does |
+|:------|:-------------|
+| **[tech-translator](skills/tech-translator/)** | Translates commands, errors, and code into plain, friendly language. Safety labels, difficulty ratings, quizzes, ELI5 mode, adaptive learning. The foundation skill. |
+| **[courage-mode](skills/courage-mode/)** | For when you're stuck or afraid to try. Breaks scary tasks into tiny safe steps. Celebrates attempts, not just successes. |
+
+### The Learning Loop
+| Skill | What it does |
+|:------|:-------------|
+| **[hypothesis-lab](skills/hypothesis-lab/)** | Structures every project as an experiment — hypothesis, test, evidence, iterate. Because we begin with hypotheses, not certainties. |
+| **[build-first-break-later](skills/build-first-break-later/)** | Gets a rough v1 working in minutes, then iterates. Anti-perfectionism by design. The first version is supposed to be ugly. |
+| **[unknown-unknowns](skills/unknown-unknowns/)** | Surfaces things you didn't think to ask — adjacent opportunities, hidden risks, bigger picture connections. Expands your mental model. |
+| **[iteration-journal](skills/iteration-journal/)** | Structured reflection: what you built, what broke, what you learned. Tracks growth over time. Weekly summaries and look-back features. |
+
+### The Builder Tools
+| Skill | What it does |
+|:------|:-------------|
+| **[workflow-detective](skills/workflow-detective/)** | Investigates your daily work to find the highest-value thing to automate. Scores opportunities by effort vs. impact. |
+| **[apps-script-builder](skills/apps-script-builder/)** | Dedicated Google Apps Script assistant. Every service, trigger, and deployment pattern — with full setup walkthroughs for non-technical users. |
+| **[api-explorer](skills/api-explorer/)** | Demystifies APIs. From "what is an API?" to making your first call to connecting work systems. Patient tour guide energy. |
+| **[agent-architect](skills/agent-architect/)** | Guides you from simple automations to building your own agents. Six levels, each with a concrete project. |
+
+### The Multipliers
+| Skill | What it does |
+|:------|:-------------|
+| **[show-your-work](skills/show-your-work/)** | Generates shareable artifacts — impact summaries, how-to guides, before/after comparisons, presentation outlines. Turns builds into organizational knowledge. |
+| **[teach-back](skills/teach-back/)** | Helps you teach what you built to others. Workshop plans, teaching guides, train-the-trainer kits. Knowledge grows when shared. |
+| **[impact-mapper](skills/impact-mapper/)** | Quantifies what you built — time saved, errors reduced, ROI. Generates impact reports for leadership. "I saved the team 12 hours/week" beats "I built a cool thing." |
+
+## The Journey
+
+```
+ courage-mode          "I'm scared to start"
+      |
+ tech-translator       "What does that mean?"
+      |
+ workflow-detective     "What should I build?"
+      |
+ hypothesis-lab         "What do I think will happen?"
+      |
+ build-first-break-later "Let's just build it"
+      |
+ unknown-unknowns       "What am I not seeing?"
+      |
+ iteration-journal      "What did I learn?"
+      |
+ apps-script-builder    "Let me build something real"
+ api-explorer           "Let me connect systems"
+      |
+ agent-architect        "Let me build something smart"
+      |
+ show-your-work         "Let me share what I built"
+ impact-mapper          "Let me prove the value"
+      |
+ teach-back             "Let me help others build too"
+```
 
 ## Installation
 
-### Option 1: Install as a Plugin (recommended)
+### Option 1: Install all skills as a Plugin (recommended)
 
 ```bash
-claude /plugin install tech-translator
+/plugin install ChewbaccaRoars/tech-translator
 ```
 
-### Option 2: Manual Install (personal, all projects)
+### Option 2: Install individual skills manually
 
 ```bash
-mkdir -p ~/.claude/skills/tech-translator
-cp skills/tech-translator/SKILL.md ~/.claude/skills/tech-translator/SKILL.md
+# Replace <skill-name> with any skill from the list above
+mkdir -p ~/.claude/skills/<skill-name>
+cp skills/<skill-name>/SKILL.md ~/.claude/skills/<skill-name>/SKILL.md
 ```
 
-### Option 3: Project-level (shared with team via git)
+### Option 3: Project-level (shared with your team via git)
 
 ```bash
-mkdir -p .claude/skills/tech-translator
-cp skills/tech-translator/SKILL.md .claude/skills/tech-translator/SKILL.md
-git add .claude/skills/tech-translator/
-git commit -m "Add tech-translator skill"
+# Copy all skills into your project
+cp -r skills/ .claude/skills/
+git add .claude/skills/
+git commit -m "Add AI-native builder skills"
 ```
 
-## Usage
+## Quick Start
 
-### Startup
+1. Install the plugin (see above)
+2. Start a new Claude Code session
+3. Tech Translator will ask if you want it always-on, on-demand, or off
+4. Say "what should I build?" to start with Workflow Detective
+5. Say "let's build it" to jump into Build First, Break Later
+6. Say "what did I learn?" at the end to reflect with Iteration Journal
 
-On first use, Tech Translator asks you to pick a mode:
+## Trigger Phrases (all skills)
 
-- **Always-on** — every response includes explanations automatically
-- **On-demand** — explanations only when you ask
-- **Off** — no translations
+| Say this | Skill that activates |
+|:---------|:---------------------|
+| "explain that" / "what does that mean" | tech-translator |
+| "I'm stuck" / "I'm scared" / "this is too hard" | courage-mode |
+| "I have an idea" / "I want to build something" | hypothesis-lab |
+| "let's just build it" / "start building" | build-first-break-later |
+| "what am I missing?" / "what else?" | unknown-unknowns |
+| "what should I build?" / "workflow audit" | workflow-detective |
+| "build an apps script" / "automate my spreadsheet" | apps-script-builder |
+| "what is an API?" / "connect to an API" | api-explorer |
+| "build an agent" / "level up" | agent-architect |
+| "help me share this" / "show my work" | show-your-work |
+| "help me teach this" / "create a workshop" | teach-back |
+| "what's the impact?" / "show the ROI" | impact-mapper |
+| "journal" / "what did I learn today?" | iteration-journal |
+| "quiz me" / "cheat sheet" / "ELI5" | tech-translator |
 
-Your choice persists across sessions.
+## Values
 
-### Trigger Phrases (on-demand mode)
+These skills are built on a set of beliefs:
 
-| Say this | To get |
-|:---------|:-------|
-| "explain that" / "what does that mean" | Explanation of the last thing that happened |
-| "teach me about [topic]" | Full beginner-friendly lesson on any topic |
-| "why did you do that?" | Reasoning behind Claude's last action |
-| "show me a simpler version" | Simplified rewrite of code or commands |
-| "quiz me" | 3-5 multiple choice questions on what you've learned |
-| "explain like I'm 5" / "ELI5" | Ultra-simple explanation with zero jargon |
-| "cheat sheet" | One-page reference of everything covered |
-| "what should I try next?" | Suggested next steps for learning |
-
-### Change Settings Mid-Session
-
-```
-set translator to always-on
-set translator to on-demand
-set translator to off
-```
-
-### Invoke Directly
-
-```
-/tech-translator
-```
-
-## Example Output
-
-Running `grep -r "error" ./logs/`:
-
-> *(This is like using Ctrl+F to search every file in the "logs" folder for the word "error")*
-> `[Beginner]` `[SAFE — this only reads files, nothing is changed]`
->
-> **Breaking it down:**
-> - `grep` — a search tool that looks through text inside files
-> - `-r` — "recursive" means it checks every file inside every subfolder too
-> - `"error"` — the word we're searching for
-> - `./logs/` — the folder to search in (the dot means "starting from where we are right now")
->
-> **Want to keep going?** You could:
-> - Try changing "error" to another word to search for something different
-> - Ask me "teach me about regular expressions" to learn advanced search patterns
+- **Learning is not optional.** It's how we grow, adapt, and improve.
+- **We learn by doing.** Not by reading. Not by watching. By building.
+- **We begin with hypotheses, not certainties.** We test what we believe. We let evidence sharpen our thinking.
+- **We respect the unknown.** The best discoveries come from questions we didn't know to ask.
+- **We are teachers.** Knowledge grows when it's shared. People grow when they're believed in.
+- **We seek transformative outcomes.** We're not here to preserve the status quo. We're here to create meaningful change.
 
 ## Contributing
 
-PRs welcome! If you have ideas for better analogies, additional trigger phrases, or new learning features, open an issue or submit a PR.
+PRs welcome! Whether it's better analogies, new skills, additional trigger phrases, or improvements to existing ones — open an issue or submit a PR.
 
 ## License
 
