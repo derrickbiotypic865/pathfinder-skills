@@ -29,17 +29,17 @@ About 30 minutes. Try each technique as you read — learning by doing is the on
 
 ### The Tab Search Feature (most people don't know this exists)
 
-See that little **downward arrow** in the top-right of your Chrome window, next to the minimize button? That's the **tab search** button. It appears when you have more tabs than fit on the screen.
+Chrome has a built-in search that lets you find any open tab by typing a few letters. Most people have no idea this exists.
 
 **Try it now:**
-1. Click that **downward arrow** (or press **Ctrl+Shift+A**)
+1. Press **Ctrl+Shift+A**
 2. A search box appears showing ALL your open tabs
 3. Start typing the name of a page — it filters instantly
 4. Click the one you want — Chrome jumps right to it
 
-**Why this matters:** Instead of clicking through 47 tabs, you type 3 letters and you're there. This one feature alone will save you time every single day.
+That's it. Instead of clicking through 47 tabs, you type 3 letters and you're there. This one feature alone will save you time every single day.
 
-**Keyboard shortcut:** `Ctrl+Shift+A` — memorize this one. It's the single most useful shortcut for tab hoarders.
+**Memorize this shortcut:** `Ctrl+Shift+A` — it's the single most useful shortcut for tab hoarders.
 
 ### Jump Between Recent Tabs
 
