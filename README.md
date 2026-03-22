@@ -378,6 +378,23 @@ This shows the quick menu (`/learn`, `/build`, `/reflect`, `/share`) when you st
 | "journal" / "what did I learn today?" | iteration-journal |
 | "quiz me" / "cheat sheet" / "ELI5" | tech-translator |
 
+## Workshops & Guides
+
+In addition to Claude Code skills, this repo includes ready-to-use teaching materials.
+
+### Workshops (facilitator-led)
+
+| Workshop | Duration | What they build |
+|:---------|:---------|:----------------|
+| **[Apps Script Dashboard](workshops/apps-script-dashboard/)** | 90 min | Interactive web dashboard reading from Google Sheets |
+
+### Guides (self-paced)
+
+| Guide | Time | What you'll learn |
+|:------|:-----|:------------------|
+| **[Apps Script Dashboard](guides/apps-script-dashboard/)** | 60-90 min | Build and deploy a dashboard web app from scratch — editor, services, triggers, CLASP |
+| **[Browser Tab Management](guides/browser-tab-management/)** | 30 min | Chrome tab search, shortcuts, tab groups, pinning, and a system to stay organized |
+
 ## Values
 
 These skills are built on a set of beliefs:
