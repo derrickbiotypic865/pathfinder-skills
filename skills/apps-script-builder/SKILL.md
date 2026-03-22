@@ -124,6 +124,25 @@ Know when to use each service and guide the user accordingly:
 | Calendar API (advanced) | Advanced calendar operations | Yes — must add via Services |
 | Drive API (advanced) | Advanced Drive operations, permissions | Yes — must add via Services |
 | Admin SDK | Google Workspace admin tasks | Yes — must add via Services |
+| AdSense Management API | Managing AdSense ad performance and revenue | Yes — must add via Services |
+| BigQuery API | Running SQL queries on large datasets | Yes — must add via Services |
+| Cloud Identity Groups API | Managing Google Groups membership | Yes — must add via Services |
+| Display & Video 360 API | Managing display and video ad campaigns | Yes — must add via Services |
+| Drive Activity API | Tracking file activity (views, edits, shares) | Yes — must add via Services |
+| Drive Labels API | Managing metadata labels on Drive files | Yes — must add via Services |
+| Google Analytics API | Reading website analytics data | Yes — must add via Services |
+| Google Analytics Admin API | Managing Analytics accounts and properties | Yes — must add via Services |
+| Google Analytics Data API | Querying Analytics reports programmatically | Yes — must add via Services |
+| Google Chat API | Sending messages and managing Chat spaces | Yes — must add via Services |
+| Google Classroom API | Managing courses, students, and assignments | Yes — must add via Services |
+| Google Tasks API | Creating and managing Google Tasks | Yes — must add via Services |
+| Google Workspace Events API | Subscribing to Workspace event notifications | Yes — must add via Services |
+| Groups Migration API | Importing messages into Google Groups | Yes — must add via Services |
+| Groups Settings API | Configuring Google Groups settings | Yes — must add via Services |
+| Tag Manager API | Managing Google Tag Manager containers | Yes — must add via Services |
+| Vertex AI API | Running AI/ML models from Google Cloud | Yes — must add via Services |
+| YouTube Data API v3 | Managing YouTube videos, channels, playlists | Yes — must add via Services |
+| YouTube Analytics API | Reading YouTube channel analytics | Yes — must add via Services |
 
 ## Setup Walkthrough (Include Every Time)
 
@@ -299,6 +318,43 @@ If you just want the script to work for you:
 - No deployment needed
 
 ### Publishing as a Web App
+
+Before deploying, you need to configure the `appsscript.json` manifest file. This tells Google how to run your web app.
+
+**Setting up appsscript.json for web apps:**
+
+First, make the manifest visible:
+1. In the Apps Script editor, click the **gear icon** (Project Settings) in the left sidebar
+2. Check the box: **Show "appsscript.json" manifest file in editor**
+3. Click on `appsscript.json` in the file list
+
+Then add or update the `webapp` section. But first, two important questions to ask yourself:
+
+**"Who should this run as?"** (`executeAs`)
+- `"USER_DEPLOYING"` — The script runs with YOUR permissions. Choose this when the script needs access to YOUR data (your sheets, your email). Most common choice.
+- `"USER_ACCESSING"` — The script runs with the VISITOR's permissions. Choose this when each person should only see their own data.
+
+**"Who should have access?"** (`access`)
+- `"MYSELF"` — Only you can use it. Good for testing.
+- `"DOMAIN"` — Anyone in your organization. Good for internal tools.
+- `"ANYONE"` — Anyone on the internet. Good for public tools.
+- `"ANYONE_ANONYMOUS"` — Anyone, without requiring sign-in.
+
+Example `appsscript.json`:
+```json
+{
+  "timeZone": "America/New_York",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "webapp": {
+    "executeAs": "USER_DEPLOYING",
+    "access": "DOMAIN"
+  }
+}
+```
+
+**Important:** Always ask the user these two questions before the first deployment of any web app project. Do not assume defaults.
 
 If you want the script to have a URL that people can visit or that other services can call:
 
