@@ -11,6 +11,85 @@ A hands-on assistant that builds Google Apps Script projects with users who may 
 
 **Keywords**: apps script, google workspace, gmail, sheets, calendar, drive, forms, automation, triggers, deployment
 
+## CLASP — Command Line Tool for Apps Script
+
+### What is CLASP?
+
+CLASP (Command Line Apps Script Projects) lets you write and manage Apps Script code from your computer instead of the browser editor. Think of it like having a local copy of your script that syncs with Google.
+
+### Why Use CLASP?
+
+- **Work in your own editor** — use VS Code, Claude Code, or any text editor instead of the browser
+- **Version control** — track changes with git, collaborate with others
+- **Pull existing projects** — download any Apps Script project to your computer
+- **Push changes** — send your local code back to Google with one command
+- **Multiple files** — organize large projects into separate files
+
+### Installing CLASP
+
+**Step 1: Install Node.js** (if you don't have it)
+1. Go to [nodejs.org](https://nodejs.org)
+2. Download the LTS (Long Term Support) version
+3. Run the installer — click Next through all the steps
+4. To verify: open a terminal and type `node --version` — you should see a version number
+
+**Step 2: Install CLASP**
+```bash
+npm install -g @google/clasp
+```
+*(This installs clasp globally so you can use it from anywhere)*
+
+**Step 3: Log in to Google**
+```bash
+clasp login
+```
+A browser window opens — sign in with your Google account and allow access.
+
+### Common CLASP Commands
+
+| Command | What It Does |
+|:--------|:-------------|
+| `clasp login` | Sign in to your Google account |
+| `clasp create --title "My Project"` | Create a new Apps Script project |
+| `clasp clone <scriptId>` | Download an existing project to your computer |
+| `clasp pull` | Download the latest code from Google to your computer |
+| `clasp push` | Upload your local code to Google |
+| `clasp push --watch` | Auto-upload every time you save a file |
+| `clasp open` | Open the project in the browser editor |
+| `clasp deployments` | List all deployments |
+
+### Your First CLASP Workflow
+
+**Pulling an existing project:**
+1. Find the Script ID: open the project in the browser editor, click **Project Settings** (gear icon), copy the **Script ID**
+2. In your terminal:
+```bash
+mkdir my-project
+cd my-project
+clasp clone <paste-script-id-here>
+```
+3. Your files are now on your computer — edit them with any editor
+4. Push changes back: `clasp push`
+
+**Creating a new project:**
+```bash
+mkdir my-new-project
+cd my-new-project
+clasp create --title "My Automation" --type sheets
+```
+This creates a new Apps Script project attached to a Google Sheet.
+
+### The .clasp.json File
+
+Every CLASP project has a `.clasp.json` file that tells CLASP which Google project to sync with:
+```json
+{
+  "scriptId": "1abc123...",
+  "rootDir": "."
+}
+```
+Don't edit this manually unless you know what you're doing — CLASP creates it for you.
+
 ## Trigger Phrases
 
 Activate this skill when the user says anything like:
@@ -299,6 +378,10 @@ When the user encounters an error, translate it:
 | "Exception: Document is not bound to a container" | You tried to use `SpreadsheetApp.getActiveSpreadsheet()` in a standalone script | Open the script from Extensions > Apps Script inside the spreadsheet instead |
 | "ReferenceError: [name] is not defined" | You used a variable or function name that does not exist | Check for typos in variable and function names |
 | "Exception: Service Sheets has not been enabled" | The script needs an advanced service turned on | Go to Services (left sidebar), click +, find Sheets API, click Add |
+
+## Additional Resources
+
+- For proven code patterns and syntax examples, see [patterns-reference.md](patterns-reference.md) — a cheat sheet of battle-tested patterns for reading sheets, sending emails, building dashboards, handling APIs, caching, triggers, CSV parsing, and more.
 
 ## Tone Guidelines
 
