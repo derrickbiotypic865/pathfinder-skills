@@ -395,6 +395,7 @@ In addition to Claude Code skills, this repo includes ready-to-use teaching mate
 | **[Apps Script Dashboard](guides/apps-script-dashboard/)** | 60-90 min | Build and deploy a dashboard web app from scratch — editor, services, triggers, CLASP |
 | **[Browser Tab Management](guides/browser-tab-management/)** | 30 min | Chrome tab search, shortcuts, tab groups, pinning, and a system to stay organized |
 | **[File & Folder Management](guides/file-and-folder-management/)** | 30-40 min | Find any file instantly, a folder structure that works, naming conventions, cleanup plan, weekly habits |
+| **[Slack Management](guides/slack-management/)** | 30-40 min | Organize your sidebar, tame notifications, use threads, search like a pro, huddles, keyboard shortcuts |
 
 ## Values
 
