@@ -303,6 +303,51 @@ Quantifies the impact of your builds — time saved, errors reduced, ROI — and
 
 </details>
 
+## Quirk Extraction System
+
+Quirks are technical patterns — API gotchas, platform constraints, code pitfalls — extracted from lesson files into organized, searchable reference files. They capture the "wrong way vs. right way" so you (and your AI tools) avoid known pitfalls.
+
+### The QUIRK Marker Format
+
+Add these HTML comment blocks to any lesson file after a technical discovery:
+
+```html
+<!-- QUIRK: Short descriptive title -->
+<!-- WHEN: Situation where this applies -->
+<!-- WRONG: Code or approach that fails -->
+<!-- RIGHT: Code or approach that works -->
+<!-- WHY: One-sentence root cause -->
+<!-- TAGS: comma-separated technology tags -->
+```
+
+### How It Works
+
+1. **Write a lesson** — use the `lessons` or `iteration-journal` skill
+2. **Markers get extracted** — Claude adds QUIRK markers for each technical pattern
+3. **Generator runs** — `generate-quirks.py` scans all lesson files for markers
+4. **Quirk files created** — grouped by tag into `quirks/<tag>.md` with an index
+
+The generator (`skills/lessons/generate-quirks.py`) has two extraction modes:
+- **Structured** (primary): reads `<!-- QUIRK: ... -->` markers — precise and reliable
+- **Heuristic** (fallback): extracts from lesson structure (headings, tables, bullet patterns)
+
+### Automating with a Claude Code Hook
+
+Set up a PostToolUse hook on `Write|Edit` that runs the generator whenever a lesson file is saved:
+
+```json
+{
+  "hooks": {
+    "PostToolUse": [{
+      "matcher": "Write|Edit",
+      "script": "python3 path/to/generate-quirks.py"
+    }]
+  }
+}
+```
+
+This keeps your quirk files always up to date as you write new lessons.
+
 ## The Journey
 
 ```

@@ -54,6 +54,28 @@ not just follow instructions.]
 [One sentence: what to do going forward. The TL;DR.]
 ```
 
+### Step 2b — Extract Quirk Markers
+
+After writing the lesson, extract technical quirks and add structured HTML comment markers. For EACH technical failure, bug, or gotcha in the lesson, add:
+
+```html
+<!-- QUIRK: Short descriptive title -->
+<!-- WHEN: Situation where this applies -->
+<!-- WRONG: Code or approach that fails -->
+<!-- RIGHT: Code or approach that works -->
+<!-- WHY: One-sentence root cause -->
+<!-- TAGS: comma-separated technology tags -->
+```
+
+Rules:
+- Only extract TECHNICAL patterns (API quirks, code gotchas, platform constraints)
+- Do NOT create quirks for reflections, confidence, impact, or hypotheses
+- Place markers immediately after the relevant section
+- Tags should describe the technology (e.g., google-apps-script, python, openshift, rust)
+- Each marker should be self-contained
+
+These markers enable automated quirk extraction via `generate-quirks.py`.
+
 ### Step 3 — Save and Share
 
 Save the lesson file to the current directory as `lessons/[slug].md` where the slug is a kebab-case version of the title.
@@ -73,7 +95,7 @@ If yes:
 File names should be lowercase, kebab-case, and descriptive:
 - `granite-tool-calling-quirks.md`
 - `openshift-sandbox-no-internet.md`
-- `red-hat-internal-ssl-certs.md`
+- `internal-ssl-cert-errors.md`
 - `python-async-windows-event-loop.md`
 
 NOT: `lesson1.md`, `notes.md`, `fix.md`

@@ -38,9 +38,32 @@ Collect the following fields for each entry:
 
 Walk through each field conversationally rather than dumping the whole template at once. If the user gives short answers, that is fine — brevity is welcome.
 
+### Quirk Extraction
+
+After collecting "What broke or surprised me", extract technical quirks and add structured HTML comment markers to the lesson file. For EACH technical failure, bug, or gotcha discussed, add a marker block:
+
+```html
+<!-- QUIRK: Short descriptive title -->
+<!-- WHEN: Situation where this applies -->
+<!-- WRONG: Code or approach that fails -->
+<!-- RIGHT: Code or approach that works -->
+<!-- WHY: One-sentence root cause -->
+<!-- TAGS: comma-separated technology tags -->
+```
+
+**Rules for quirk markers:**
+- Only extract TECHNICAL patterns (API quirks, code gotchas, platform constraints)
+- Do NOT create quirks for impact estimates, confidence levels, hypotheses, or reflections
+- Place markers immediately AFTER the relevant section in the lesson
+- Tags should describe the technology (e.g., google-apps-script, python, openshift, rust)
+- Create new tags if the technology doesn't fit existing ones
+- Each marker should be self-contained — someone reading ONLY the marker should understand the pattern
+
+**After saving the lesson file**, the Claude Code PostToolUse hook will automatically run `generate-quirks.py` to regenerate the quirk files from all markers.
+
 ### Saving Entries
 
-After collecting all fields, save the completed journal entry to memory so it persists across sessions. Store entries in a structured format that includes the date, topic area, confidence level, and all reflection fields. This allows retrieval and aggregation later.
+Save the completed journal entry (with quirk markers embedded) to your lessons directory using a descriptive filename like `topic-name.md`. The file persists across sessions and feeds into the quirks extraction system.
 
 ### Weekly Summary
 
@@ -92,7 +115,19 @@ When the user says "look back" or asks something like "show me what I was workin
 
 **User:** "3"
 
-**Assistant:** "Logged. You're building real intuition here — three sessions ago you rated this a 1. That's real progress."
+**Assistant:** "Logged. Let me extract the technical quirk from that CORS issue..."
+
+*Claude adds to the lesson file:*
+```
+<!-- QUIRK: CORS errors from missing header -->
+<!-- WHEN: Setting up Express middleware for a REST API -->
+<!-- WRONG: Writing route handlers before configuring CORS — requests fail silently -->
+<!-- RIGHT: Set up CORS middleware first: `app.use(cors())` before any route definitions -->
+<!-- WHY: Middleware order matters — CORS headers must be set before the request reaches route handlers -->
+<!-- TAGS: node, express, rest-api -->
+```
+
+**Assistant:** "Quirk captured. You're building real intuition here — three sessions ago you rated this a 1. That's real progress."
 
 ## Tone Guidelines
 
