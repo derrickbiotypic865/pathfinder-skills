@@ -1,0 +1,18 @@
+{
+  "_comment": "Stop hook: auto-generate quirks from lessons and push to git on session end",
+  "_usage": "Copy the Stop entry into your ~/.claude/settings.json hooks section",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /path/to/your/training-repo && python generate-quirks.py 2>/dev/null; git add quirks/ lessons/ 2>/dev/null; git diff --cached --quiet 2>/dev/null && exit 0; git commit -m \"Auto-generate quirks from lessons\" 2>/dev/null && git push origin master 2>/dev/null && echo '{\"systemMessage\": \"Quirks auto-generated and pushed to git\"}' || true",
+            "timeout": 30,
+            "statusMessage": "Saving lessons to git..."
+          }
+        ]
+      }
+    ]
+  }
+}

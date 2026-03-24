@@ -76,19 +76,64 @@ Rules:
 
 These markers enable automated quirk extraction via `generate-quirks.py`.
 
+### Step 2c — Generate Quirk Tag Files
+
+After writing the lesson with QUIRK markers, also generate the corresponding quirk tag files in `quirks/` using this format:
+
+```markdown
+# [Tag Name] -- Technical Quirks
+
+triggers: [comma, separated, trigger, keywords]
+updated: [YYYY-MM-DD]
+count: [number of quirks]
+
+---
+
+### [Quirk title]
+**When:** [situation]
+**Wrong:** [what fails]
+**Right:** [what works]
+**Why:** [root cause]
+*Source: [lesson-filename.md]*
+```
+
+Rules for quirk files:
+- Group quirks by technology tag (one file per tag, e.g., `snowflake.md`, `python.md`)
+- If a tag file already exists, append new quirks and update the count
+- Triggers should be keywords that help someone find this quirk (tool names, error fragments, common terms)
+- Update `_index.md` with the new/updated tag files
+
+### Step 2d — Sanitize Personal Information
+
+Before saving ANY lesson or quirk file, sanitize all personal information:
+
+- Replace real usernames with generic placeholders (e.g., `YOUR_USER`)
+- Replace real email addresses with `user@example.com` or `manager@example.com`
+- Replace real account identifiers with `your-account-id`
+- Replace resource IDs (Sheet IDs, project IDs, etc.) with `YOUR_SHEET_ID`, `YOUR_SCRIPT_ID`, etc.
+- Replace OAuth client IDs with `YOUR_CLIENT_ID`
+- Remove any API keys, tokens, bearer tokens, passwords, or secrets
+- Remove real person names used as examples — use generic titles instead
+- Keep product names, role patterns, and technical terms — only strip identifying info
+
+**Test**: Run `grep -rn -i -E "(your_real_username|your_real_email|client_secret|api_key)" lessons/ quirks/` before committing. Output should be empty.
+
 ### Step 3 — Save and Share
 
-Save the lesson file to the current directory as `lessons/[slug].md` where the slug is a kebab-case version of the title.
+Save the lesson file AND quirk tag files:
 
-Then ask the user:
+1. Save lesson to your lessons directory (e.g., `lessons/[slug].md`)
+2. Save/update quirk tag files in `quirks/`
+3. Update `quirks/_index.md`
 
-> "Lesson saved to `lessons/[filename].md`. Want me to commit it and create a merge request to the team's training repo?"
+Then commit and push:
+```bash
+git add lessons/[filename].md quirks/
+git commit -m "Add lesson + quirks: [title]"
+git push
+```
 
-If yes:
-1. `git add lessons/[filename].md`
-2. `git commit -m "Add lesson: [title]"`
-3. `git push`
-4. Create an MR if they have a fork of a shared repo configured
+If `generate-quirks.py` exists in the repo root and runs as a hook, it will auto-regenerate the quirk tag files from QUIRK markers. In that case, only commit the lesson file and let the hook handle quirks.
 
 ### Naming Convention
 
