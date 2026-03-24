@@ -1,5 +1,7 @@
 # Plugins & Skills — Hands-On Exercises
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 Extend Claude Code with community plugins and custom skills. Plugins are packaged extensions from marketplaces. Skills are .md files that teach Claude new behaviors.
 
 ---

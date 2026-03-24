@@ -1,5 +1,7 @@
 # Get Your Files Under Control — A Practical Guide to Folder and File Management
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 Your Desktop has 87 files on it. Your Downloads folder is a graveyard of things you opened once. You have three copies of "Final Report" and none of them are actually final. Sound familiar?
 
 These guides give you a simple system to organize your files so you can find anything in seconds. No apps to install, no fancy tools — just the features already built into your computer.

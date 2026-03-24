@@ -1,5 +1,7 @@
 # Take Back Your Slack — A Practical Guide to Slack Management and Organization
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 ## The Problem
 
 You're in 147 channels. Your sidebar is a wall of bold text. Notifications ping you every 30 seconds. You know someone sent you that important link last week, but searching for it returns 400 results. You spend half your day in Slack and the other half recovering from being in Slack. Sound familiar?

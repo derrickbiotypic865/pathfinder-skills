@@ -1,5 +1,7 @@
 # Get Your Files Under Control — Linux Edition
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 ## The Problem
 
 Your Desktop has 87 files on it. Your Downloads folder is a graveyard of things you opened once. You saved that important document somewhere, but you can't remember where. You have three copies of "Final Report" and none of them are actually final. Sound familiar?

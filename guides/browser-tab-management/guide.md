@@ -1,5 +1,7 @@
 # Tame Your Tabs — A Practical Guide to Browser Tab Management
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 ## The Problem
 
 You have 47 tabs open. You can't read any of the titles anymore. You know that one important tab is somewhere in there, but finding it means clicking through every single one. Your computer fan is screaming. Sound familiar?

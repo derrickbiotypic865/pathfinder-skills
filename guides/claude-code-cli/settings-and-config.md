@@ -1,5 +1,7 @@
 # Settings & Config — Hands-On Exercises
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 Customize your Claude Code environment — from themes and models to CLAUDE.md memory files that give Claude persistent context about your project.
 
 ---

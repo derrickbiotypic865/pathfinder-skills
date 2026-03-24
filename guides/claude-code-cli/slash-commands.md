@@ -1,5 +1,7 @@
 # Slash Commands — Hands-On Exercises
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 These exercises walk you through the most useful Claude Code slash commands. Try each one in a live Claude Code session.
 
 ---

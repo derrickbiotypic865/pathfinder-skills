@@ -1,5 +1,7 @@
 # Build Your First Dashboard — Self-Paced Guide
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 ## What You'll Build
 
 An interactive web dashboard that reads data from a Google Sheet and displays it as a clean, styled web page with a shareable URL. It looks like this:

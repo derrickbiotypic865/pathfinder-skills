@@ -1,5 +1,7 @@
 # Models & Context — Hands-On Exercises
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 Learn how to pick the right model, manage your context window, and navigate conversations like a pro.
 
 ---

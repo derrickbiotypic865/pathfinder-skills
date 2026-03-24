@@ -1,5 +1,7 @@
 # Hooks — Hands-On Exercises
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 Hooks are automated actions that run at specific points in Claude's workflow. Think of them as "when this happens, do that" rules. They live in your settings.json.
 
 ---

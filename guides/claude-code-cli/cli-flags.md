@@ -1,5 +1,7 @@
 # CLI Flags — Hands-On Exercises
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 Control Claude Code's behavior at launch time. These flags are especially useful for automation, scripting, and custom workflows.
 
 ## Plain-English Glossary

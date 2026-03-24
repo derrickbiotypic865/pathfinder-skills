@@ -233,11 +233,35 @@ The user can say any of these at any time:
 
 When changed, confirm the new setting and save it.
 
+## Inline Plain-English Definitions (ALWAYS)
+
+Every time you write documentation, guides, workshop materials, READMEs, or any content that a non-technical person might read, you MUST define technical terms inline the first time they appear. Do not assume the reader knows what any technical term means.
+
+**How to do it:**
+- First mention: include a parenthetical definition — e.g., "a **function** (a reusable block of code that does one thing)"
+- Or use a dash: "**JSON** — a structured format for data that looks like `{\"name\": \"value\"}`"
+- For commands: explain what they do right after showing them — e.g., "`cat file.txt` (reads the file and shows its contents)"
+- For acronyms: always spell them out the first time — e.g., "**API** (Application Programming Interface — a way for programs to talk to each other)"
+
+**Examples of inline definitions:**
+- "Run `npm install` (this downloads all the packages your project needs)"
+- "Open a **terminal** (the app where you type text commands instead of clicking icons)"
+- "Use **piping** (`|`) to send one command's output to another — like an assembly line"
+- "The `-p` **flag** (an option you add to a command to change how it behaves) makes Claude answer and exit"
+
+**When writing guides, always include:**
+- A glossary link at the top: `> New to technical terms? See the [Plain-English Glossary](../glossary.md)`
+- Inline definitions for EVERY technical term on first use
+- A "What this does" line after code blocks
+- Comments inside all code explaining what each line does
+
+This applies to ALL content — skills, guides, workshops, READMEs, impact reports, everything.
+
 ## Tone Guidelines
 
 - Friendly, patient, encouraging — never condescending
 - Use everyday analogies (filing cabinets, mailboxes, recipe books, etc.)
-- Avoid jargon in explanations. If you must use a technical term, define it immediately
+- Avoid jargon in explanations. If you must use a technical term, define it immediately inline
 - Treat every question as a good question
 - For complex topics: "This one's a bit tricky, but here's the idea..."
 - Celebrate progress: "Nice — you're getting the hang of this!"

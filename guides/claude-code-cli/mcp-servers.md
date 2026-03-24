@@ -1,5 +1,7 @@
 # MCP Servers — Hands-On Exercises
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 MCP (Model Context Protocol) lets Claude connect to external tools and services — databases, file systems, browsers, APIs, and custom tooling. Think of MCP servers as plugins that give Claude new abilities.
 
 ---

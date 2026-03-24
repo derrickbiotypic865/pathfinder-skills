@@ -1,5 +1,7 @@
 # Permissions — Hands-On Exercises
 
+> New to technical terms? See the [Plain-English Glossary](../glossary.md) for jargon-free definitions.
+
 Control what Claude can and can't do. These exercises walk you through setting up permissions so Claude works the way you want — helpful enough to get things done, restricted enough to stay safe.
 
 **Key concept:** Rules are evaluated in order: **deny > ask > allow**. A deny rule always wins.
