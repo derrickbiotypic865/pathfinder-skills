@@ -2,6 +2,26 @@
 
 Your go-to reference for everything Claude Code can do from the command line. Start with the quick reference cards below, then dive into the detail pages for hands-on exercises.
 
+## Jargon-Free Glossary
+
+New to the command line? Here's what the technical terms in this guide actually mean:
+
+| Term | Plain English |
+|:-----|:-------------|
+| **CLI** | "Command Line Interface" — typing commands instead of clicking buttons. The text-based way to talk to your computer. |
+| **Terminal** | The app where you type commands. Think of it as a text-only window into your computer. |
+| **Flag** | An option you add after a command to change how it works. Like `-p` in `claude -p`. Think of it as a setting you pick when you start. |
+| **Piping (`\|`)** | Sending one command's output into another command. Like an assembly line — step 1 finishes, passes its result to step 2. |
+| **`cat`** | A command that reads a file and shows its contents. Short for "concatenate" but just think "read this file." |
+| **`git diff`** | Shows what changed in your code since the last save point. Like "track changes" in Word. |
+| **`stdout`** | "Standard output" — where a command sends its results. Usually your screen, but piping sends it somewhere else. |
+| **JSON** | A structured way to organize data that computers can read. Looks like `{"name": "value"}`. |
+| **Session** | A conversation with Claude. Has history and can be resumed later — like a chat thread. |
+| **MCP** | "Model Context Protocol" — a way to plug external tools into Claude (databases, APIs, browsers). |
+| **Hook** | An automatic action that triggers when something happens. Like "every time Claude edits a file, run the linter." |
+| **Plugin** | A pre-packaged extension you can install with one command. Adds new skills and capabilities. |
+| **Skill** | A `.md` file that teaches Claude a new behavior or workflow. Creates a `/slash-command`. |
+
 ## Quick Navigation
 
 | Section | What it covers | Detail Page |

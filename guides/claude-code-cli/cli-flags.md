@@ -2,31 +2,51 @@
 
 Control Claude Code's behavior at launch time. These flags are especially useful for automation, scripting, and custom workflows.
 
+## Plain-English Glossary
+
+Before we start, here are the technical terms you'll see in this guide:
+
+| Term | What it means |
+|:-----|:-------------|
+| **Flag** | An option you add after `claude` to change how it behaves. Like adding `-p` or `--model sonnet`. Think of flags as settings you choose at startup. |
+| **CLI** | "Command Line Interface" — the text-based way to interact with your computer by typing commands instead of clicking icons. |
+| **Terminal** | The app where you type commands. On Windows: Git Bash, PowerShell, or Command Prompt. On Mac: Terminal. On Linux: Terminal. |
+| **Piping** | Sending the output of one command as the input to another, using the `|` character. It's like an assembly line — one step finishes, passes its result to the next. |
+| **stdin / stdout** | "Standard input" and "standard output" — when you pipe content, it goes into stdin. When Claude responds, it comes out of stdout. Think of stdin as "what goes in" and stdout as "what comes out." |
+| **Print mode (`-p`)** | A mode where Claude answers your question and immediately exits — no back-and-forth conversation. Like texting someone a question vs. having a phone call. |
+| **Session** | A conversation with Claude. It has history, context, and can be resumed later. Like a chat thread. |
+| **JSON** | A structured data format that computers can easily read. Looks like `{"name": "Ben", "role": "builder"}`. Used when other programs need to process Claude's output. |
+
 ---
 
 ## Exercise 1: Print Mode (-p)
 
 **What you'll learn:** How to use Claude as a one-shot tool — ask a question, get an answer, exit.
 
+**In plain English:** Normally when you type `claude`, it opens a conversation you can go back and forth in (like a phone call). With `-p`, you ask ONE question, get ONE answer, and it's done (like sending a text message). This is useful when you just need a quick answer or want to use Claude inside a script.
+
 1. In your terminal (not inside Claude):
 ```bash
 claude -p "what is a Dockerfile?"
 ```
 2. Claude answers and exits — no interactive session
-3. Try with a file:
+3. Try with a file (the `<` symbol feeds a file's contents to Claude):
 ```bash
 claude -p "explain this code" < my-script.py
 ```
-4. Try piping:
+4. Try piping (the `|` symbol sends one command's output to another — like an assembly line):
 ```bash
 cat error.log | claude -p "what went wrong in this log?"
 ```
+This does two things: `cat error.log` reads the file, then `|` sends its contents to Claude along with your question.
+
 5. Chain with other commands:
 ```bash
 git diff | claude -p "write a concise commit message for these changes"
 ```
+This takes the output of `git diff` (a list of code changes) and asks Claude to write a commit message based on it.
 
-**What to expect:** Output goes to stdout. No interactive prompt. Great for scripts and piping.
+**What to expect:** The answer appears in your terminal and Claude exits. No interactive prompt. It's like asking a question at a drive-through — you get your answer and drive on.
 
 **Pro tip:** `-p` is the key to using Claude in shell scripts, CI pipelines, and automation. Combine with `--output-format json` for machine-readable output.
 
@@ -193,23 +213,39 @@ claude --add-dir ../shared-lib ../config
 
 **What you'll learn:** Practical examples of piping content into Claude.
 
+**In plain English:** "Piping" means connecting two commands with the `|` character so the output of the first command becomes the input of the second. Think of it like an assembly line:
+
+```
+[Command 1 makes something] --pipe--> [Command 2 uses it]
+[cat reads a file]          ---|-->    [Claude analyzes it]
+```
+
+The `cat` command reads a file and outputs its contents. The `|` pipe sends those contents to Claude. Claude reads them and responds to your question. Here are practical examples:
+
 ```bash
-# Explain an error log
+# Read a log file and ask Claude what went wrong
+# cat = "read this file and show its contents"
+# | = "send that to the next command"
+# claude -p = "answer this question and exit"
 cat error.log | claude -p "what went wrong?"
 
-# Review a diff
+# Show code changes and ask Claude to review them
+# git diff = "show me what changed in my code"
 git diff | claude -p "review these changes for issues"
 
-# Generate a commit message
+# Show staged changes and ask for a commit message
+# git diff --staged = "show changes I'm about to commit"
 git diff --staged | claude -p "write a commit message"
 
-# Summarize a file
+# Read a README and ask for a summary
 cat README.md | claude -p "summarize in 3 bullet points"
 
-# Process multiple files
+# Read all Python files and check for security issues
+# find = "search for files matching a pattern"
 find . -name "*.py" -exec cat {} \; | claude -p "find security issues"
 
-# Chain: fix errors and pipe the result
+# Fix broken JSON and save the result
+# The > symbol saves output to a file (instead of showing it on screen)
 cat broken.json | claude -p "fix this JSON" > fixed.json
 ```
 
