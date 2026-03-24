@@ -460,6 +460,7 @@ In addition to Claude Code skills, this repo includes ready-to-use teaching mate
 | **[Browser Tab Management](guides/browser-tab-management/)** | 30 min | Chrome tab search, shortcuts, tab groups, pinning, and a system to stay organized |
 | **[File & Folder Management](guides/file-and-folder-management/)** | 30-40 min | Find any file instantly, a folder structure that works, naming conventions, cleanup plan, weekly habits |
 | **[Slack Management](guides/slack-management/)** | 30-40 min | Organize your sidebar, tame notifications, use threads, search like a pro, huddles, keyboard shortcuts |
+| **[Claude Code CLI](guides/claude-code-cli/)** | 45-60 min | Slash commands, permissions, models, CLI flags, MCP servers, hooks, plugins, skills, settings — with hands-on exercises |
 
 ## Values
 
